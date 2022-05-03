@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Jugadores";
-    string url = "http://aws-primer-examen-agus.s3-website-us-east-1.amazonaws.com";
+    string url = "https://aws-primer-examen-agus.s3.amazonaws.com/";
 }
 
 <h1>Jugadores</h1>
@@ -42,7 +42,7 @@
             </td>
             <td>
                 @{ 
-                    string urlimagen = url +"/"+ item.Imagen;
+                    string urlimagen = url + item.Imagen;
                 }
                 <img src="@urlimagen" style="height:100px;width:100px" />
             </td>            
